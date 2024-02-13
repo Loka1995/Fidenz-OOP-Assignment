@@ -54,17 +54,17 @@ public class Trapezoid implements Shapes {
     }
 
     @Override
-    public double getInnerArea() {
+    public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.baseA, this.baseB, this.borderThickness);
     }
 
     @Override
-    public double getBorderArea() {
-        return getArea() - getInnerArea();
+    public double getAreaOfBorder() {
+        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override
-    public double getArea() {
+    public double getAreaWithBorder() {
         return areaCalculateHelper(this.baseA + (2 * this.borderThickness),
                 this.baseB + (2 * this.borderThickness),
                 this.height + (2 * this.borderThickness));

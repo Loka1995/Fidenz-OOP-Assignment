@@ -42,17 +42,17 @@ public class Rectangle implements Shapes {
     }
 
     @Override
-    public double getInnerArea() {
+    public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.length, this.borderThickness);
     }
 
     @Override
-    public double getBorderArea() {
-        return getArea() - getInnerArea();
+    public double getAreaOfBorder() {
+        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override
-    public double getArea() {
+    public double getAreaWithBorder() {
         return areaCalculateHelper(this.length + (2 * this.borderThickness),
                 this.height + (2 * this.borderThickness));
     }

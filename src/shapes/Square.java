@@ -32,17 +32,17 @@ public class Square implements Shapes{
     }
 
     @Override
-    public double getInnerArea() {
+    public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.length);
     }
 
     @Override
-    public double getBorderArea() {
-        return getArea() - getInnerArea();
+    public double getAreaOfBorder() {
+        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override
-    public double getArea() {
+    public double getAreaWithBorder() {
         return areaCalculateHelper(this.length + (2 * this.borderThickness));
     }
 

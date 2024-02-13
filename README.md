@@ -21,3 +21,13 @@
    as they implement **Shapes** interface.
 6. `getTotalBorderArea()`, `getTotalInnerArea()` additionally provide area sizes of total borders, total area
    sizes of shapes without borders, respectively.
+
+# Changes to the Programme.
+1. In the **Shapes** interface methods were renamed to `getAreaWithoutBorder()`, `getAreaOfBorder()`
+   and `getAreaWithBorder()`.
+2. In the **Canvas** class methods were renamed to `totalAreaWithBorders()`, `totalAreaOfBorders()` 
+   and `totalAreaWithoutBorders()`.
+3. In the **Canvas** class, to calculate only the border area of the shapes in the canvas, each shape's 
+   `getAreaOfBorder()` method has been used. (This will reduce the extra loop used in the previous programme)
+4. **Function** functional interface has been introduced to avoid code duplications in the functions 
+   mentioned in number 2.

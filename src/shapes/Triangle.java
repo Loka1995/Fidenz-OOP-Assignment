@@ -43,17 +43,17 @@ public class Triangle implements Shapes {
     }
 
     @Override
-    public double getInnerArea() {
+    public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.base, this.height);
     }
 
     @Override
-    public double getBorderArea() {
-        return getArea() - getInnerArea();
+    public double getAreaOfBorder() {
+        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override
-    public double getArea() {
+    public double getAreaWithBorder() {
         return areaCalculateHelper(this.base + (2 * this.borderThickness),
                 this.height + (2 * this.borderThickness));
     }

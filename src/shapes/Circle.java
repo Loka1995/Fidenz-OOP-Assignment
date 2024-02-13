@@ -32,17 +32,17 @@ public class Circle implements Shapes {
     }
 
     @Override
-    public double getInnerArea() {
+    public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.radius);
     }
 
     @Override
-    public double getBorderArea() {
-        return getArea() - getInnerArea();
+    public double getAreaOfBorder() {
+        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override
-    public double getArea() {
+    public double getAreaWithBorder() {
         return areaCalculateHelper(this.radius + this.borderThickness);
     }
 

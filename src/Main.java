@@ -9,33 +9,33 @@ public class Main {
         Shapes trapezoid = new Trapezoid(4,6,7,2);
         Canvas canvas = new Canvas();
 
-        System.out.println(square.getBorderArea());
-        System.out.println(square.getInnerArea());
-        System.out.println(square.getArea());
+        System.out.println(square.getAreaOfBorder());
+        System.out.println(square.getAreaWithoutBorder());
+        System.out.println(square.getAreaWithBorder());
 
-        System.out.println(rectangle.getBorderArea());
-        System.out.println(rectangle.getInnerArea());
-        System.out.println(rectangle.getArea());
+        System.out.println(rectangle.getAreaOfBorder());
+        System.out.println(rectangle.getAreaWithoutBorder());
+        System.out.println(rectangle.getAreaWithBorder());
 
-        System.out.println(circle.getBorderArea());
-        System.out.println(circle.getInnerArea());
-        System.out.println(circle.getArea());
+        System.out.println(circle.getAreaOfBorder());
+        System.out.println(circle.getAreaWithoutBorder());
+        System.out.println(circle.getAreaWithBorder());
 
-        System.out.println(triangle.getBorderArea());
-        System.out.println(triangle.getInnerArea());
-        System.out.println(triangle.getArea());
+        System.out.println(triangle.getAreaOfBorder());
+        System.out.println(triangle.getAreaWithoutBorder());
+        System.out.println(triangle.getAreaWithBorder());
 
-        System.out.println(trapezoid.getBorderArea());
-        System.out.println(trapezoid.getInnerArea());
-        System.out.println(trapezoid.getArea());
+        System.out.println(trapezoid.getAreaOfBorder());
+        System.out.println(trapezoid.getAreaWithoutBorder());
+        System.out.println(trapezoid.getAreaWithBorder());
 
         canvas.addToCanvas(square);
         canvas.addToCanvas(rectangle);
         canvas.addToCanvas(circle);
         canvas.addToCanvas(triangle);
         canvas.addToCanvas(trapezoid);
-        System.out.println(canvas.getTotalBorderArea());
-        System.out.println(canvas.getTotalInnerArea());
-        System.out.println(canvas.totalArea());
+        System.out.println(canvas.totalAreaOfBorders());
+        System.out.println(canvas.totalAreaWithoutBorders());
+        System.out.println(canvas.totalAreaWithBorders());
     }
 }
