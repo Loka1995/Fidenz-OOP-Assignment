@@ -43,7 +43,7 @@ public class Rectangle implements Shapes {
 
     @Override
     public double getAreaWithoutBorder() {
-        return areaCalculateHelper(this.length, this.borderThickness);
+        return areaCalculateHelper(this.length, this.height);
     }
 
     @Override

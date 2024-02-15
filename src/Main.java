@@ -2,7 +2,7 @@ import shapes.*;
 
 public class Main {
     public static void main(String[] args) {
-        Shapes square = new Square(9,2);
+        Shapes square = new Rectangle(9, 9,2);
         Shapes rectangle = new Rectangle(4,3,2);
         Shapes circle = new Circle(4,2);
         Shapes triangle = new Triangle(4,3,2);

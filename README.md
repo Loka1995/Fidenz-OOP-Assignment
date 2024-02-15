@@ -22,7 +22,7 @@
 6. `getTotalBorderArea()`, `getTotalInnerArea()` additionally provide area sizes of total borders, total area
    sizes of shapes without borders, respectively.
 
-# Changes to the Programme.
+# Changes to the Programme(1).
 1. In the **Shapes** interface methods were renamed to `getAreaWithoutBorder()`, `getAreaOfBorder()`
    and `getAreaWithBorder()`.
 2. In the **Canvas** class methods were renamed to `totalAreaWithBorders()`, `totalAreaOfBorders()` 
@@ -31,3 +31,7 @@
    `getAreaOfBorder()` method has been used. (This will reduce the extra loop used in the previous programme)
 4. **Function** functional interface has been introduced to avoid code duplications in the functions 
    mentioned in number 2.
+
+# Changes to the Programme(2).
+1. **Square** class was removed from the package. It was noted that the class was redundant since square was
+   a special case of rectangle.
