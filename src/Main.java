@@ -2,11 +2,11 @@ import com.fidenz.shapes.*;
 
 public class Main {
     public static void main(String[] args) {
-        Shapes square = new Rectangle(9, 9,2);
-        Shapes rectangle = new Rectangle(4,3,2);
-        Shapes circle = new Circle(4,2);
-        Shapes triangle = new Triangle(4,3,2);
-        Shapes trapezoid = new Trapezoid(4,6,7,2);
+        Shape square = new Rectangle(9, 9,2);
+        Shape rectangle = new Rectangle(4,3,2);
+        Shape circle = new Circle(4,2);
+        Shape triangle = new Triangle(4,3,2);
+        Shape trapezoid = new Trapezoid(4,6,7,2);
         Canvas canvas = new Canvas();
 
         System.out.println(square.getAreaOfBorder());
