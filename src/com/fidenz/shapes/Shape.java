@@ -1,4 +1,4 @@
-package shapes;
+package com.fidenz.shapes;
 
 public abstract class Shape implements Shapes{
     protected double borderThickness = 0;

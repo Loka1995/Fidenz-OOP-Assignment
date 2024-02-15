@@ -1,4 +1,4 @@
-import shapes.*;
+import com.fidenz.shapes.*;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package shapes;
+package com.fidenz.shapes;
 
 public class Trapezoid extends Shape {
 

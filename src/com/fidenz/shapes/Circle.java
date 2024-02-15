@@ -1,4 +1,4 @@
-package shapes;
+package com.fidenz.shapes;
 
 public class Circle extends Shape {
     private double radius;

@@ -1,4 +1,4 @@
-package shapes;
+package com.fidenz.shapes;
 
 import java.util.ArrayList;
 import java.util.List;

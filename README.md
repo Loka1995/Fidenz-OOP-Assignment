@@ -38,3 +38,4 @@
 2. Abstract class **Shape** was introduced to remove duplicate code across concrete classes. Namely `borderThickness`,
    `setBorderThickness(double borderThickness)`, `getBorderThickness()` and `getAreaOfBorder()` have now been 
    declared and defined in the **Shape** class.
+3. Package name renamed.

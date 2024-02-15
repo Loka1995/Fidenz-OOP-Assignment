@@ -1,4 +1,4 @@
-package shapes;
+package com.fidenz.shapes;
 
 public class Rectangle extends Shape {
     private double length;
