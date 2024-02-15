@@ -1,9 +1,8 @@
 package shapes;
 
-public class Rectangle implements Shapes {
+public class Rectangle extends Shape {
     private double length;
     private double height;
-    private double borderThickness;
 
     public Rectangle(double length, double height) {
         this.height = height;
@@ -25,10 +24,6 @@ public class Rectangle implements Shapes {
         this.height = height;
     }
 
-    public void setBorderThickness(double borderThickness) {
-        this.borderThickness = borderThickness;
-    }
-
     public double getLength() {
         return length;
     }
@@ -37,18 +32,9 @@ public class Rectangle implements Shapes {
         return height;
     }
 
-    public double getBorderThickness() {
-        return borderThickness;
-    }
-
     @Override
     public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.length, this.height);
-    }
-
-    @Override
-    public double getAreaOfBorder() {
-        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override

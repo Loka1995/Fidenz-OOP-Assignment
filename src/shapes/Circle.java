@@ -1,8 +1,7 @@
 package shapes;
 
-public class Circle implements Shapes {
+public class Circle extends Shape {
     private double radius;
-    private double borderThickness;
 
     public Circle(double radius) {
         this.radius = radius;
@@ -14,31 +13,17 @@ public class Circle implements Shapes {
         this.borderThickness = borderThickness;
     }
 
-    public void setBorderThickness(double borderThickness) {
-        this.borderThickness = borderThickness;
-    }
-
     public void setRadius(double radius) {
         this.radius = radius;
     }
-
 
     public double getRadius() {
         return radius;
     }
 
-    public double getBorderThickness() {
-        return borderThickness;
-    }
-
     @Override
     public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.radius);
-    }
-
-    @Override
-    public double getAreaOfBorder() {
-        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override

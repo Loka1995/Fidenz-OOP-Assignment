@@ -1,9 +1,8 @@
 package shapes;
 
-public class Triangle implements Shapes {
+public class Triangle extends Shape {
     private double base;
     private double height;
-    private double borderThickness;
 
     public Triangle(double base, double height) {
         this.base = base;
@@ -26,10 +25,6 @@ public class Triangle implements Shapes {
         this.base = base;
     }
 
-    public void setBorderThickness(double borderThickness) {
-        this.borderThickness = borderThickness;
-    }
-
     public double getHeight() {
         return height;
     }
@@ -38,18 +33,9 @@ public class Triangle implements Shapes {
         return base;
     }
 
-    public double getBorderThickness() {
-        return borderThickness;
-    }
-
     @Override
     public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.base, this.height);
-    }
-
-    @Override
-    public double getAreaOfBorder() {
-        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override

@@ -1,11 +1,10 @@
 package shapes;
 
-public class Trapezoid implements Shapes {
+public class Trapezoid extends Shape {
 
     private double baseA;
     private double baseB;
     private double height;
-    private double borderThickness;
 
     public Trapezoid(double baseA, double baseB, double height) {
         this.baseA = baseA;
@@ -33,10 +32,6 @@ public class Trapezoid implements Shapes {
         this.baseB = baseB;
     }
 
-    public void setBorderThickness(double borderThickness) {
-        this.borderThickness = borderThickness;
-    }
-
     public double getHeight() {
         return height;
     }
@@ -49,18 +44,9 @@ public class Trapezoid implements Shapes {
         return baseB;
     }
 
-    public double getBorderThickness() {
-        return borderThickness;
-    }
-
     @Override
     public double getAreaWithoutBorder() {
         return areaCalculateHelper(this.baseA, this.baseB, this.borderThickness);
-    }
-
-    @Override
-    public double getAreaOfBorder() {
-        return getAreaWithBorder() - getAreaWithoutBorder();
     }
 
     @Override

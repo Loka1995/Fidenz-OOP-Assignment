@@ -35,3 +35,6 @@
 # Changes to the Programme(2).
 1. **Square** class was removed from the package. It was noted that the class was redundant since square was
    a special case of rectangle.
+2. Abstract class **Shape** was introduced to remove duplicate code across concrete classes. Namely `borderThickness`,
+   `setBorderThickness(double borderThickness)`, `getBorderThickness()` and `getAreaOfBorder()` have now been 
+   declared and defined in the **Shape** class.
